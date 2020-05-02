@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atividade Reflexiva</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<form action="espelho.php" method="POST">
+		<h3>Dados Pessoais:</h3>
+		<div class="pessoais">
+			<input type="text" name="nome" placeholder="Qual seu nome?" required> <br>
+			<input type="text" name="idade" placeholder="Qual sua Idade? Ex: 18" required> <br>
+			<input type="text" name="sexo" placeholder="Qual seu sexo? Ex: Masculino" required> <br>
+		</div>
+
+		<h3>Endereço: </h3>
+		<div class="endereco">			
+			<input type="text" name="logradouro" placeholder="Onde você mora? Ex: Rua ipiranga, 322" required> <br>
+			<input type="text" name="cidade" placeholder="Qual sua cidade? Ex: Toledo" required><br>
+			<input type="text" name="estado" placeholder="Qual seu estado? Ex: PR" required><br>
+		</div>
+
+		<h3>Contato: </h3>
+		<div class="contato">
+			<input type="text" name="telefone" placeholder="Qual seu telefone? Ex: (45) 9 9999-9999" required> <br>
+			<input type="text" name="email" placeholder="Qual seu E-mail? Ex: fulanodeTal@hotmail.com" required> <br>
+		</div>
+
+		<h3>Informações Adicionais: </h3>
+		<div class="informAdd">
+			<input type="text" name="empresa" placeholder="Qual nome da ultima Empresa em que trabalhou?" required><br>
+			<textarea name="funcoesDesempenhadas">Escreva aqui as funções desempenhadas...</textarea><br>
+
+			<h3>Escreva aqui sua história acadêmica:</h3>
+			<textarea name="histAcad" required></textarea><br><br>
+
+			<h3>Escreva aqui algo para complementar seu currículo:</h3>
+			<textarea name="infoComp" required></textarea><br><br>
+		</div>
+		<button type="submit">Gerar Espelho</button>
+	</form>
+</body>
+</html>
